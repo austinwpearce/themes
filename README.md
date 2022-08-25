@@ -1,2 +1,2 @@
-# themes
-Themes and visualization stuff
+# Visuals
+Themes, colors, and other visualization stuff
