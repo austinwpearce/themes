@@ -1,9 +1,13 @@
 library(ggplot2)
-library(extrafont)
+library(showtext)
+
+font_add_google("Roboto Condensed", "robocop")
 # Requires that Roboto fonts already installed to machine and registered
 
+showtext_auto()
+
 # My own ggplot2 theme
-sanserif <- c("Roboto Condensed")
+sanserif <- c("robocop")
 
 theme_gc <- 
     theme_minimal(base_family = sanserif,
