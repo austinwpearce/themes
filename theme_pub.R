@@ -1,9 +1,12 @@
 library(ggplot2)
-library(extrafont)
-# Requires that Roboto fonts already installed to machine and registered
+library(showtext)
+
+font_add_google("Crimson Pro", "crimson")
+
+showtext_auto()
 
 # My own ggplot2 theme
-serif <- c("Times New Roman")
+serif <- c("crimson")
 
 theme_pub <- 
     theme_minimal(base_family = serif, base_size = 14) +
