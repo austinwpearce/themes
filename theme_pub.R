@@ -7,6 +7,7 @@ showtext_auto()
 
 # My own ggplot2 theme
 serif <- c("crimson")
+serif <- c("serif")
 
 theme_pub <- 
     theme_minimal(base_family = serif, base_size = 14) +
