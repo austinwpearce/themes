@@ -1,12 +1,12 @@
 library(ggplot2)
-library(showtext)
+#library(showtext)
 
-font_add_google("Crimson Pro", "crimson")
+#font_add_google("Crimson Pro", "crimson")
 
-showtext_auto()
+#showtext_auto()
 
 # My own ggplot2 theme
-serif <- c("crimson")
+#serif <- c("crimson")
 serif <- c("serif")
 
 # theme_pub <- 
