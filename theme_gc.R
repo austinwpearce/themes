@@ -13,7 +13,7 @@ font_add("Fira Code", "firacode-variablefont_wght.ttf")
 showtext_auto()
 
 # My own ggplot2 theme
-theme_gc <- function(modern = TRUE){
+theme_gc <- function(modern = TRUE, fill_gray = TRUE){
   if (modern == TRUE) {
     custom_font <- c("robocop") 
   } else {
@@ -23,8 +23,10 @@ theme_gc <- function(modern = TRUE){
     base_size = 18,
     base_family = custom_font) +
     ggplot2::theme(
-      plot.background = element_rect(fill = "#f1f1f1"),
-      plot.margin = margin(t = 3, r = 3, b = 3, l = 3, unit = "pt"),
+      plot.background = element_rect(
+        fill = if_else(fill_gray == TRUE, "#f1f1f1", "#ffffff"),
+        color = "#f1f1f1"),
+      plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"),
       panel.grid = element_line(color = "#f7f7f7"),
       panel.spacing = unit(2, "lines"),
       panel.border = element_blank(),
