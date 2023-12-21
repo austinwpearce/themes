@@ -10,7 +10,7 @@ showtext_auto()
 sanserif <- c("robocop")
 
 theme_gc <- 
-    theme_minimal(base_size = 14) +
+    theme_minimal(base_size = 15) +
     ggplot2::theme(
         plot.background = NULL,
         plot.margin = margin(t = 2, r = 2, b = 2, l = 2, unit = "pt"),
