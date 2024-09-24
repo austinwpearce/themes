@@ -42,10 +42,11 @@ theme_ftm <- function(modern = TRUE, fill_gray = TRUE){
       axis.title.x = element_text(
         hjust = 0,
         margin = margin(t = 10, r = 0, b = 0, l = 0, unit = "pt")),
-      legend.title.align = 0,
+      legend.title = element_text(hjust = 0),
       legend.key.height = unit(x = 5, units = "mm"),
       legend.key.width = unit(x = 1, units = "cm"),
-      legend.position = c(1, 0.5),
+      legend.position = "inside",
+      legend.position.inside = c(1, 0.5),
       legend.justification = c(1, 0.5)
     )
 }
